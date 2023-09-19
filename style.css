@@ -1,0 +1,114 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  font: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.timer-container {
+  width: 100%;
+  height: 100vh;
+  background: var(
+    --gradient2,
+    radial-gradient(293.21% 130.49% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding-top: 72px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* 타이머 */
+.timer {
+  width: 400px;
+  height: 360px;
+  border-radius: 16px;
+  background: var(
+    --gradient,
+    linear-gradient(144deg, #5572bb 2.13%, #374b7c 102.97%)
+  );
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer h2 {
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 48px;
+}
+
+.timer h2::after {
+  content: "";
+  display: block;
+  width: 312px;
+  height: 1px;
+  background: #3d538a;
+  margin: 23px 0 33px 0;
+}
+
+.operation-screen {
+  display: flex;
+}
+
+.operation-screen input {
+  width: 50px;
+  height: 50px;
+  background-image: url("./img/time-box.png");
+  background-size: 50px;
+}
+
+.copyright {
+  color: #8596bf;
+  font-size: 14px;
+  font-weight: 400;
+}
